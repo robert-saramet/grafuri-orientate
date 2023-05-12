@@ -20,7 +20,7 @@
 
   <!-- Github button -->
   <div class="navbar-end">
-    <a class="btn btn-outline" href="https://github.com/robert-saramet"
+    <a class="btn btn-outline" href="https://github.com/robert-saramet/grafuri-orientate"
       >Github</a
     >
   </div>
