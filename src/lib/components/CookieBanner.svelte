@@ -12,7 +12,7 @@
     cookieName="Despre cookie-uri"
     heading="Despre cookie-uri"
     description="Acest site vă respectă confidențialitatea și nu colectează date personale fără acordul dumneavoastră explicit 😎"
-    canRejectCookies={true}
+    canRejectCookies={window.innerWidth > 500}
     acceptLabel="Acceptă"
     rejectLabel="Refuză"
     settingsLabel="Preferințe"
