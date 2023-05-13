@@ -31,7 +31,7 @@
       <TypeWriter mode="scramble" scrambleDuration={800} scrambleSlowdown={true} {disabled}>
         <h1 class="text-5xl font-bold">{title}</h1>
       </TypeWriter>
-      <TypeWriter {interval} keepCursorOnFinish={1000} {disabled}>
+      <TypeWriter {interval} keepCursorOnFinish={2000} {disabled}>
         <p class="py-6 max-w-3xl">{description}</p>
       </TypeWriter>
       <div class="flex flex-row gap-8">
