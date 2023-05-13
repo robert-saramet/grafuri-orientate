@@ -1,7 +1,9 @@
 <script>
-  import Navbar from "@/pages/home/Navbar.svelte";
+  import Navbar from "@/lib/components/Navbar.svelte";
+  import Footer from "@/lib/components/Footer.svelte";
+  import CookieBanner from "@/lib/components/CookieBanner.svelte";
+
   import Landing from "@/pages/home/Landing.svelte";
-  import Footer from "@/pages/home/Footer.svelte";
   import Theory from "@/pages/home/Theory.svelte";
 </script>
 
@@ -11,5 +13,6 @@
     <div class="carousel-item w-full"><Landing /></div>
     <div class="carousel-item w-full"><Theory /></div>
   </div>
+  <CookieBanner />
   <Footer />
 </main>

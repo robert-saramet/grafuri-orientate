@@ -1,11 +1,17 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@formkit/auto-animate':
+    specifier: 1.0.0-beta.6
+    version: 1.0.0-beta.6
   daisyui:
     specifier: ^2.51.6
     version: 2.51.6(autoprefixer@10.4.14)(postcss@8.4.23)
 
 devDependencies:
+  '@beyonk/gdpr-cookie-consent-banner':
+    specifier: ^10.0.0
+    version: 10.0.0(svelte@3.59.1)
   '@sveltejs/vite-plugin-svelte':
     specifier: ^2.0.4
     version: 2.2.0(svelte@3.59.1)(vite@4.3.2)
@@ -18,6 +24,9 @@ devDependencies:
   svelte:
     specifier: ^3.58.0
     version: 3.59.1
+  svelte-typewriter:
+    specifier: ^3.1.6
+    version: 3.1.6(svelte@3.59.1)
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -30,6 +39,15 @@ packages:
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  /@beyonk/gdpr-cookie-consent-banner@10.0.0(svelte@3.59.1):
+    resolution: {integrity: sha512-Av/BRMxOHfWi84MFAdWUefV36RtyZ5sDWA8ouyI9Iqb7M2v6XhwTzkRjGhb8ZUGECCfrbmUATzWNpMG1kDX3lw==}
+    peerDependencies:
+      svelte: ^3.54.0
+    dependencies:
+      js-cookie: 3.0.5
+      svelte: 3.59.1
+    dev: true
 
   /@esbuild/android-arm64@0.17.18:
     resolution: {integrity: sha512-/iq0aK0eeHgSC3z55ucMAHO05OIqmQehiGay8eP5l/5l+iEr4EIbh4/MI8xD9qRFjqzgkc0JkX0LculNC9mXBw==}
@@ -228,6 +246,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@formkit/auto-animate@1.0.0-beta.6:
+    resolution: {integrity: sha512-PVDhLAlr+B4Xb7e+1wozBUWmXa6BFU8xUPR/W/E+TsQhPS1qkAdAsJ25keEnFrcePSnXHrOsh3tiFbEToOzV9w==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -604,6 +626,11 @@ packages:
     resolution: {integrity: sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==}
     hasBin: true
 
+  /js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
+    dev: true
+
   /kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
@@ -835,6 +862,14 @@ packages:
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       svelte: '>=3.19.0'
+    dependencies:
+      svelte: 3.59.1
+    dev: true
+
+  /svelte-typewriter@3.1.6(svelte@3.59.1):
+    resolution: {integrity: sha512-KmY0IWfq6RhTosfLMkZwmBwvwjIKh72jZnWE2taBivtfJJfvBAIrJ3oByObDzisnwUDqyV+ynQZP27SK5UUygg==}
+    peerDependencies:
+      svelte: '>=3.47.x'
     dependencies:
       svelte: 3.59.1
     dev: true
