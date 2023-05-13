@@ -36,6 +36,11 @@
   <div>
     <span class="footer-title">Legal</span>
     <a class="link link-hover">Surse</a>
+    <a
+      class="link link-hover"
+      href="https://github.com/robert-saramet/grafuri-orientate/blob/main/LICENSE"
+      >Licență</a
+    >
     <a class="link link-hover">GDPR</a>
   </div>
 </footer>
