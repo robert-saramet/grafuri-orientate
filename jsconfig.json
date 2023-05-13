@@ -4,6 +4,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/lib/*": ["./src/lib/*"],
+      "@/components/*": ["./src/lib/components/*"],
       "@/navbar/*": ["./src/lib/navbar/*"],
       "@/hero/*": ["./src/lib/hero/*"],
       "@/footer/*": ["./src/lib/footer/*"],
