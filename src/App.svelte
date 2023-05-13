@@ -1,15 +1,15 @@
 <script>
-  import Navbar from "./lib/sections/Navbar.svelte";
-  import Landing from "./lib/sections/Landing.svelte";
-  import Footer from "./lib/sections/Footer.svelte";
-  import Theory from "./lib/sections/Theory.svelte";
+  import Navbar from "@/pages/home/Navbar.svelte";
+  import Landing from "@/pages/home/Landing.svelte";
+  import Footer from "@/pages/home/Footer.svelte";
+  import Theory from "@/pages/home/Theory.svelte";
 </script>
 
-<main>
+<main class="overflow-x-hidden">
   <Navbar />
-  <div class="h-screen carousel carousel-vertical rounded-box">
-    <div class="carousel-item h-full"><Landing /></div>
-    <div class="carousel-item h-full"><Theory /></div>
+  <div class="w-screen carousel carousel-horizontal rounded-box">
+    <div class="carousel-item w-full"><Landing /></div>
+    <div class="carousel-item w-full"><Theory /></div>
   </div>
   <Footer />
 </main>
