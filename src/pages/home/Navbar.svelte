@@ -1,7 +1,7 @@
 <script>
-  import MobileNavbarMenu from "../navbar/MobileNavbarMenu.svelte";
-  import ArrowDownMenuSvg from "../navbar/ArrowDownMenuSvg.svelte";
-  import NavbarInnerList from "../navbar/NavbarInnerList.svelte";
+  import MobileNavbarMenu from "@/lib/navbar/MobileNavbarMenu.svelte";
+  import ArrowDownMenuSvg from "@/lib/navbar/ArrowDownMenuSvg.svelte";
+  import NavbarInnerList from "@/lib/navbar/NavbarInnerList.svelte";
 </script>
 
 <header class="navbar bg-base-100" data-theme="business">

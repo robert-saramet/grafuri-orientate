@@ -15,7 +15,7 @@
       <p class="py-6 max-w-3xl">{description}</p>
       <div class="flex flex-row gap-8">
         <button class="btn btn-primary">Află mai mult</button>
-        <Rating />
+        <Rating {rating} />
       </div>
     </div>
   </div>

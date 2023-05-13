@@ -1,6 +1,6 @@
 <script>
-  import HeroSection from "../hero/HeroSection.svelte";
-  import ImageSvg from "../hero/svg/analyze.svelte";
+  import HeroSection from "@/lib/hero/HeroSection.svelte";
+  import ImageSvg from "@/lib/hero/svg/analyze.svelte";
 </script>
 
 <HeroSection
