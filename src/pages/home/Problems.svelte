@@ -1,6 +1,6 @@
 <script>
   import HeroSection from "@/lib/hero/HeroSection.svelte";
-  import ImageSvg from "@/lib/hero/svg/feeling_proud.svelte";
+  import ImageSvg from "@/lib/hero/svg/problem_solving.svelte";
 
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
