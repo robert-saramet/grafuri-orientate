@@ -2,8 +2,8 @@
   export let Icon;
 </script>
 
-<li><a>Introducere</a></li>
-<li><a>Teorie</a></li>
+<li><a href="/#landing">Introducere</a></li>
+<li><a href="/#theory">Teorie</a></li>
 <li tabindex="0">
   <a>
     Probleme

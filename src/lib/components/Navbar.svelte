@@ -8,7 +8,7 @@
   <!-- Title and mobile menu -->
   <div class="navbar-start">
     <MobileNavbarMenu />
-    <a class="btn btn-ghost normal-case text-xl">Grafurile Orientate</a>
+    <a class="btn btn-ghost normal-case text-xl" href="/#landing">Grafurile Orientate</a>
   </div>
 
   <!-- Desktop navbar links -->
