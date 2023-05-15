@@ -8,6 +8,9 @@
   import Rating from "./Rating.svelte";
   import TypeWriter from "svelte-typewriter";
 
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
   $: interval = 3000 / description.length;
   $: showHelp = false;
 
@@ -17,6 +20,10 @@
       if (entries[0].isIntersecting) {
         // Element in viewport
         disabled = false;
+        // Dispatch event to parent
+        dispatch("visibleEvent");
+        console.log("visibleEvent dispatched");
+        console.log("page:", window.location.pathname);
       }
     });
     observer.observe(e);
@@ -26,7 +33,14 @@
   function startShowHelp() {
     setTimeout(() => {
       showHelp = true;
-    }, 3000);
+    }, 5000);
+  }
+
+  // Hide help after 3 seconds from showing
+  function startHideHelp(delay = 200) {
+    setTimeout(() => {
+      showHelp = false;
+    }, delay);
   }
 </script>
 
@@ -59,8 +73,14 @@
 </div>
 
 {#if showHelp}
-  <div class="divider divider-horizontal mx-0 bg-base-300 w-3 animate-pulse" />
-  <div class="border-r flex items-center justify-center w-12 -ml-2 bg-base-200">
+  <div
+    class="divider divider-horizontal mx-0 bg-base-300 w-3 animate-pulse hidden"
+  />
+  <div
+    class="sm:hidden border-r flex items-center justify-center w-12 -ml-2 bg-base-200"
+    on:mouseover={() => startHideHelp()}
+    on:focus={() => startHideHelp()}
+  >
     <span class="rotate-90 whitespace-nowrap font-light animate-pulse"
       >Glisați la dreapta</span
     >

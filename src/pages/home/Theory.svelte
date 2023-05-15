@@ -1,6 +1,9 @@
 <script>
   import HeroSection from "@/lib/hero/HeroSection.svelte";
   import ImageSvg from "@/lib/hero/svg/analyze.svelte";
+
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
 </script>
 
 <HeroSection
@@ -12,4 +15,7 @@
   Extremitățile unui arc sunt nodurile care îl definesc. Dacă există un
   arc între două noduri, acestea se numesc noduri adiacente. Două arce
   sunt considerate incidente dacă au cel puțin o extremitate comună."
+  on:visibleEvent={() => {
+    dispatch("visibleEvent");
+  }}
 />
