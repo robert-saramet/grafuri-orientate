@@ -19,6 +19,7 @@
 
 <main class="overflow-x-hidden">
   <Navbar />
+  <!-- Hero section/slides -->
   <div class="w-screen carousel rounded-box">
     {#each pages as page, i}
       <div class="carousel-item w-full" id={ids[i]}>
@@ -29,6 +30,6 @@
       </div>
     {/each}
   </div>
-    <BottomButtons {ids} {visibleId}/>
+  <BottomButtons {ids} {visibleId} />
   <Footer />
 </main>
