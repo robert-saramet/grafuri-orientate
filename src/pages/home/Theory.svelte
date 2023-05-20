@@ -9,7 +9,7 @@
 <HeroSection
   {ImageSvg}
   rating="3"
-  title="Teorie"
+  title="Noțiuni teoretice"
   description="Această secțiune explică noțiunile de bază ale grafurilor, 
   cu accent pe extremitățile unui arc, vârfurile adiacente și incidența. 
   Extremitățile unui arc sunt nodurile care îl definesc. Dacă există un
